@@ -135,6 +135,12 @@
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .app-header {
+    padding: 30px 15px;
+  }
+}
+
 /* Partículas flotantes */
 .app-header::before {
   content: '';
