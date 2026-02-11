@@ -13,6 +13,14 @@
   overflow: hidden;
 }
 
+@media (max-width: 768px) {
+  .voice-input {
+    padding: 20px 15px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+}
+
 .voice-input::before {
   content: '';
   position: absolute;
@@ -42,6 +50,13 @@
   flex-wrap: wrap;
 }
 
+@media (max-width: 768px) {
+  .voice-controls {
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+}
+
 .btn-voice {
   flex: 1;
   min-width: 280px;
@@ -62,6 +77,17 @@
   flex-direction: column;
   align-items: center;
   gap: 15px;
+}
+
+@media (max-width: 768px) {
+  .btn-voice {
+    min-width: unset;
+    padding: 18px 25px;
+    font-size: 14px;
+    letter-spacing: 1px;
+    gap: 10px;
+    border-radius: 25px;
+  }
 }
 
 .btn-voice::before {
@@ -112,6 +138,18 @@
   align-items: center;
   justify-content: center;
   z-index: 1;
+}
+
+@media (max-width: 768px) {
+  .microphone-icon {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .mic-stand {
+    width: 20px;
+    height: 28px;
+  }
 }
 
 .mic-stand {
@@ -194,6 +232,15 @@
   text-transform: uppercase;
 }
 
+@media (max-width: 768px) {
+  .btn-clear {
+    padding: 18px 25px;
+    font-size: 13px;
+    gap: 8px;
+    border-radius: 25px;
+  }
+}
+
 .btn-clear:hover {
   background: rgba(239, 68, 68, 0.15);
   border-color: #ef4444;
@@ -216,6 +263,13 @@
     0 4px 15px rgba(102, 187, 106, 0.15);
   border: 2px solid rgba(129, 199, 132, 0.4);
   animation: fadeIn 0.4s ease-out;
+}
+
+@media (max-width: 768px) {
+  .transcript-box {
+    padding: 20px 15px;
+    margin-top: 20px;
+  }
 }
 
 .transcript-header {
@@ -301,6 +355,20 @@
   align-items: center;
   gap: 15px;
   animation: slideDown 0.3s ease-out;
+}
+
+@media (max-width: 768px) {
+  .warning {
+    padding: 15px;
+    gap: 12px;
+    margin-top: 15px;
+  }
+  
+  .warning-icon {
+    width: 25px;
+    height: 25px;
+    font-size: 16px;
+  }
 }
 
 .warning-icon {
